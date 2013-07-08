@@ -1,7 +1,7 @@
 Web Server Content Negotiation Examples
 =======================================
 
-Provide some examples for setting up [content negotiation][0] enabled servers.
+Provide ready to use examples for setting up [content negotiation][0] enabled servers.
 
 - Apache: `mod_negotiation`
 - Nginx: `HttpRewriteModule`
