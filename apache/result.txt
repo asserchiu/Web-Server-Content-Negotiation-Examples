@@ -1,0 +1,56 @@
+== text/html ===============================================
+* About to connect() to localhost port 80 (#0)
+*   Trying 127.0.0.1... connected
+> GET /index HTTP/1.1
+> User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
+> Host: localhost
+> Accept: text/html
+>
+< HTTP/1.1 200 OK
+< Date: Mon, 08 Jul 2013 20:38:52 GMT
+< Server: Apache/2.2.22 (Ubuntu)
+< Content-Location: index.html
+< Vary: negotiate,accept,Accept-Encoding
+< TCN: choice
+< Last-Modified: Mon, 08 Jul 2013 20:38:52 GMT
+< ETag: W/"3a056a-65-4e106084c4856;4e106084c57f6"
+< Accept-Ranges: bytes
+< Content-Length: 101
+< Content-Type: text/html
+<
+<html>
+  <head>
+    <title>HTML Title</title>
+  </head>
+  <body>
+    HTML Contents
+  </body>
+</html>
+* Connection #0 to host localhost left intact
+* Closing connection #0
+== application/json ========================================
+* About to connect() to localhost port 80 (#0)
+*   Trying 127.0.0.1... connected
+> GET /index HTTP/1.1
+> User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
+> Host: localhost
+> Accept: application/json
+>
+< HTTP/1.1 200 OK
+< Date: Mon, 08 Jul 2013 20:38:52 GMT
+< Server: Apache/2.2.22 (Ubuntu)
+< Content-Location: index.json
+< Vary: negotiate,accept
+< TCN: choice
+< Last-Modified: Mon, 08 Jul 2013 20:38:52 GMT
+< ETag: W/"3a003d-39-4e106084c9676;4e106084c57f6"
+< Accept-Ranges: bytes
+< Content-Length: 57
+< Content-Type: application/json
+<
+{
+   "title": "JSON Title"
+"contents": "JSON Contents"
+}
+* Connection #0 to host localhost left intact
+* Closing connection #0

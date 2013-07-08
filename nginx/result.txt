@@ -1,0 +1,50 @@
+== text/html ===============================================
+* About to connect() to localhost port 8080 (#0)
+*   Trying 127.0.0.1... connected
+> GET /index HTTP/1.1
+> User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
+> Host: localhost:8080
+> Accept: text/html
+>
+< HTTP/1.1 200 OK
+< Server: nginx/1.1.19
+< Date: Mon, 08 Jul 2013 20:39:27 GMT
+< Content-Type: text/html
+< Content-Length: 101
+< Last-Modified: Mon, 08 Jul 2013 20:39:27 GMT
+< Connection: keep-alive
+< Accept-Ranges: bytes
+<
+<html>
+  <head>
+    <title>HTML Title</title>
+  </head>
+  <body>
+    HTML Contents
+  </body>
+</html>
+* Connection #0 to host localhost left intact
+* Closing connection #0
+== application/json ========================================
+* About to connect() to localhost port 8080 (#0)
+*   Trying 127.0.0.1... connected
+> GET /index HTTP/1.1
+> User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
+> Host: localhost:8080
+> Accept: application/json
+>
+< HTTP/1.1 200 OK
+< Server: nginx/1.1.19
+< Date: Mon, 08 Jul 2013 20:39:27 GMT
+< Content-Type: application/json
+< Content-Length: 57
+< Last-Modified: Mon, 08 Jul 2013 20:39:27 GMT
+< Connection: keep-alive
+< Accept-Ranges: bytes
+<
+{
+   "title": "JSON Title"
+"contents": "JSON Contents"
+}
+* Connection #0 to host localhost left intact
+* Closing connection #0

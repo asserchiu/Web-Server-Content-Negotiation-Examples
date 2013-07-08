@@ -1,0 +1,19 @@
+--- default.orig	2013-07-08 18:04:51.000000000 +0000
++++ default.new	2013-07-08 16:45:15.835726349 +0000
+@@ -42,6 +42,16 @@
+ 		deny all;
+ 	}
+ 
++	# check Accept header for json, check if .json is on disk
++	if ($http_accept ~* "json") { set $json T; }
++	if (-f $request_filename.json) { set $json "${json}T"; }
++
++	# if json is supported, and json is on disk, serve it!
++	if ($json = TT) {
++		# add_header Vary Accept;
++		rewrite (.*) $1.json break;
++	}
++
+ 	# Only for nginx-naxsi : process denied requests
+ 	#location /RequestDenied {
+ 		# For example, return an error code
